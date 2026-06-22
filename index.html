@@ -1,3 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MVER</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
+    color: #4da6ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid #4da6ff;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+p {
+    color: #b8c0cc;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    background: #4da6ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2f8cff;
+}
+
+/* TOP 10 */
+.top10 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.list {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
 <nav>
   <a href="index.html">HOME</a>
   <a href="tiers.html">TIERS</a>
@@ -6,21 +104,31 @@
   <a href="credits.html">CREDITS</a>
 </nav>
 
-<img src="banner.png" alt="MVER Banner" width="100%">
+<!-- HERO IMAGE -->
+<img src="banner.png" alt="MVER Banner">
+
+<!-- HERO TEXT -->
+<div class="hero">
 
 <h1>Welcome to MultiCraft Visual Editing Rankings (MVER)</h1>
 
 <p>
-The MultiCraft Visual Editing Ranking is a tier list system to rank your
-editing skills from A–F and compete against others on a Top 10 leaderboard.
+The MultiCraft Visual Editing Ranking is a tier list system to rank your editing skills
+from A–F and compete against others on a Top 10 leaderboard.
 </p>
 
 <a href="tiers.html">
   <button>View Tiers</button>
 </a>
 
+</div>
+
+<!-- TOP 10 -->
+<div class="top10">
+
 <h2>🏆 Top 10 Editors</h2>
 
+<div class="list">
 <ol>
   <li>Editor #1</li>
   <li>Editor #2</li>
@@ -33,4 +141,9 @@ editing skills from A–F and compete against others on a Top 10 leaderboard.
   <li>Editor #9</li>
   <li>Editor #10</li>
 </ol>
+</div>
 
+</div>
+
+</body>
+</html>
